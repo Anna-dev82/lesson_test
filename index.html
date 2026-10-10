@@ -3,32 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Будущее начинается с кода</title>
-    <!-- Выразительные шрифты Google Fonts (не системные) -->
+    <title>Создай свой цифровой мир!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Orbitron:wght@800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Декоративные геометрические фигуры -->
+    <!-- Неоновые пятна фона -->
+    <div class="glow glow--blue" aria-hidden="true"></div>
     <div class="glow glow--purple" aria-hidden="true"></div>
-    <div class="glow glow--cyan" aria-hidden="true"></div>
-    <div class="geo geo--ring" aria-hidden="true"></div>
-    <div class="geo geo--triangle" aria-hidden="true"></div>
-    <div class="geo geo--grid" aria-hidden="true"></div>
 
     <header class="hero">
-      <p class="hero__brand">NEXUS CODE</p>
-      <h1 class="hero__title">БУДУЩЕЕ НАЧИНАЕТСЯ С КОДА</h1>
-      <p class="hero__text">
-        Создавай цифровые миры, где идеи оживают в строках алгоритмов
-        и неоновом свете технологий.
-      </p>
-      <a class="hero__btn" href="#start">Начать создавать</a>
+      <div class="hero__copy">
+        <h1 class="hero__title">СОЗДАЙ СВОЙ ЦИФРОВОЙ МИР!</h1>
+        <p class="hero__text">
+          Пиши код, собирай блоки и запускай свои игровые миссии!
+        </p>
+        <a class="hero__btn" href="#start">НАЧАТЬ МИССИЮ 🚀</a>
+      </div>
+
+      <!-- Простой робот + летающие фигуры -->
+      <div class="hero__stage" aria-hidden="true">
+        <span class="cube cube--1"></span>
+        <span class="cube cube--2"></span>
+        <span class="star">★</span>
+        <span class="pixel pixel--1"></span>
+        <span class="pixel pixel--2"></span>
+
+        <!-- Простой мультяшный робот из фигур SVG -->
+        <svg class="robot" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+          <!-- Антенна -->
+          <line x1="100" y1="30" x2="100" y2="10" stroke="#fb923c" stroke-width="4" />
+          <circle cx="100" cy="8" r="7" fill="#4ade80" />
+          <!-- Голова -->
+          <rect x="55" y="30" width="90" height="70" rx="18" fill="#1e1b4b" stroke="#38bdf8" stroke-width="4" />
+          <!-- Глаза -->
+          <rect x="70" y="52" width="22" height="18" rx="6" fill="#38bdf8" />
+          <rect x="108" y="52" width="22" height="18" rx="6" fill="#38bdf8" />
+          <!-- Тело -->
+          <rect x="50" y="110" width="100" height="90" rx="20" fill="#312e81" stroke="#a855f7" stroke-width="4" />
+          <!-- Экран на груди -->
+          <rect x="75" y="130" width="50" height="30" rx="8" fill="#0f172a" stroke="#4ade80" stroke-width="3" />
+          <!-- Ноги -->
+          <rect x="65" y="200" width="28" height="30" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="3" />
+          <rect x="107" y="200" width="28" height="30" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="3" />
+        </svg>
+      </div>
     </header>
   </body>
 </html>
